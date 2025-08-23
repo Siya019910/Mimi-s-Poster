@@ -35,16 +35,16 @@
     max-width: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* align to top */
-    gap: 8px; /* slightly reduced gap */
-    padding: 5px; /* reduced padding for top */
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 5px;
   }
 
   .poster img.logo {
     width: 35%;
     max-width: 100px;
     height: auto;
-    margin: 5px auto 0 auto; /* small margin top */
+    margin: 5px auto 0 auto;
     filter: drop-shadow(1px 1px 3px black);
   }
 
@@ -83,6 +83,11 @@
     border-radius: 10px;
     border: 2px solid var(--gold);
     filter: drop-shadow(1px 1px 3px black);
+    transition: transform 0.3s ease; /* zoom effect */
+  }
+
+  .gallery img:hover {
+    transform: scale(1.15);
   }
 
   .qr {
@@ -96,6 +101,11 @@
     border-radius: 8px;
     animation: pulse 2s infinite;
     filter: drop-shadow(1px 1px 3px black);
+    transition: transform 0.3s ease; /* zoom effect */
+  }
+
+  .qr img:hover {
+    transform: scale(1.2);
   }
 
   @keyframes pulse {
